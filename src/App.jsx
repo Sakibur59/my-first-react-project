@@ -12,9 +12,20 @@ function App() {
       <Developer name="fardin" device="Phone"></Developer>
       <Developer name="sara" device="laptop"></Developer>
       <Developer name="ayat" device="PC"></Developer>
+      <Book name="Physics" author="Roma bijoy"></Book>
+      <Book name="Chemistry" author="soroj kanto sing"></Book>
       
     </>
   )
+}
+
+function Book({name,author}){
+  return (
+    <div className='container'>
+      <p>Name: {name}</p>
+      <p>Author: {author}</p>
+    </div>
+  ) 
 }
 
 function Developer(props) {
