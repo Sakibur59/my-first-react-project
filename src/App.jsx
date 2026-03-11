@@ -14,9 +14,16 @@ function App() {
   )
 }
 
+
+
 function Person() {
+  const personStyle = {
+    color:'red',
+    border:"2px solid green",
+    borderRadius:'20px'
+  }
   return(
-    <div>
+    <div style={personStyle}>
 
       <h1>Fardin</h1>
       <p>CSE Department</p>
