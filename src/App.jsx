@@ -3,6 +3,15 @@ import './App.css'
 
 function App() {
   
+  const clickMe = () => {
+    alert('I am clicked')
+  }
+
+  const MyNum = (num) =>{
+    const newNum = num + 5;
+    alert(newNum);
+  }
+  
 
   return (
     <>
@@ -14,9 +23,13 @@ function App() {
       <Developer name="ayat" device="PC"></Developer>
       <Book name="Physics" author="Roma bijoy"></Book>
       <Book name="Chemistry" author="soroj kanto sing"></Book> */}
-      <Todo task='eat' isdone={true}></Todo>
-      <Todo task='study' isdone={false}></Todo>
-
+      {/* <Todo task='eat' isdone={true}></Todo>
+      <Todo task='study' isdone={false}></Todo> */}
+      <button onClick={clickMe}>Click Me</button>
+      <button onClick={()=>{
+        alert("i am clicked 2 ")
+      }}>Click Me 2</button>
+      <button onClick={()=>MyNum(10)}>Click Me 3</button>
 
       
     </>
