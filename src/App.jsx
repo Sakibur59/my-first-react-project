@@ -1,4 +1,5 @@
 import Todo from './ToDo'
+import Count from './Count';
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <>
       
       <h1>Vite + React</h1>
+      <Count></Count>
       {/* <Person></Person>
       <Developer name="fardin" device="Phone"></Developer>
       <Developer name="sara" device="laptop"></Developer>
