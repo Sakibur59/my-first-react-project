@@ -1,6 +1,11 @@
 import Todo from './ToDo'
+import Post from './Posts'
 import Count from './Count';
+import { Suspense } from 'react';
 import './App.css'
+
+const Api = fetch("https://jsonplaceholder.typicode.com/posts")
+.then((res)=>res.json())
 
 function App() {
   
@@ -19,6 +24,9 @@ function App() {
       
       <h1>Vite + React</h1>
       <Count></Count>
+      <Suspense fallback={<h3>Loading....</h3>}>
+        <Post ApiPost={Api}></Post>
+      </Suspense>
       {/* <Person></Person>
       <Developer name="fardin" device="Phone"></Developer>
       <Developer name="sara" device="laptop"></Developer>

@@ -46,3 +46,10 @@
   border: 2px solid seagreen;
   border-radius: 20px;
 }
+.card{
+  color: aquamarine;
+  border-radius: 20px;
+  border: 2px solid seagreen;
+  margin: 20px;
+  padding: 20px;
+}
