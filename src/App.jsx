@@ -3,7 +3,7 @@ import Post from './Posts'
 import Count from './Count';
 import { Suspense } from 'react';
 import './App.css'
-import Friend from './Friends';
+import Friends from './Friends';
 
 const Api = fetch("https://jsonplaceholder.typicode.com/posts")
 .then((res)=>res.json())
@@ -35,7 +35,7 @@ function App() {
         <Post ApiPost={Api}></Post>
       </Suspense>
       <Suspense fallback={<h3>Friends are coming......</h3>}>
-      <Friend fetchPromise={fetchPromise}></Friend>
+      <Friends fetchPromise={fetchPromise}></Friends>
       </Suspense>
       {/* <Person></Person>
       <Developer name="fardin" device="Phone"></Developer>

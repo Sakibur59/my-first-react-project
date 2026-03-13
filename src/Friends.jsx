@@ -1,10 +1,14 @@
 import { use } from "react"
+import Friend from "./Friend"
 
-export default function Friend({fetchPromise}){
-    const friend = use(fetchPromise)
+export default function Friends({fetchPromise}){
+    const friends = use(fetchPromise)
     return(
         <div className="card">
-            <h3>Friend: {friend.length}</h3>
+            <h3>Friend: {friends.length}</h3>
+            {
+                friends.map(friend =><Friend friend={friend}></Friend> )
+            }
         </div>
     )
 }
